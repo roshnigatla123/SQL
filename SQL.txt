@@ -1,0 +1,73 @@
+CREATION OF TABLE 
+
+
+
+create table deptinfo(name varchar(20),id int,proper varchar(20));
+insert into deptinfo (name,id,loc) values("Roshini",10,"karimnagar");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("Akhila",20,"Hyderabad");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("divya",30,"korutla");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("prasanna",40,"khammam");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("sravs",50,"jadcherla");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("navya",60,"Mumbai");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("laya",70,"banglore");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into deptinfo (name,id,loc) values("sathwika",80,"Hyderabad");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from deptinfo;
++-------------+------+-----------+
+| name        | id   | proper      |
++-------------+------+-----------+
+| roshini   |  10 | karimnagar  |
+| Akhila    |  20 | Hyderabad   |
+| divya     |  30 | Korutla     |
+| prasanna  |  40 | khammam     |
+| sravs     |  50 | jadcherla   |
+| navya     |  60 | Mumbai      |
+| laya      |  70 | banglore    |
+| sathwika  |  80 | Hyderabad   |
++-------------+------+-----------+
+8 rows in set (0.00 sec)
+
+
+mysql> select id from deptinfo;
++------+
+| id   |
++------+
+|  10 |
+|  20 |
+|  30 |
+|  40 |
+|  50 |
+|  60 |
+|  70 |
+|  80 |
++------+
+8 rows in set (0.00 sec)
+
+
+mysql> select count(name) from deptinfo;
++-------------+
+| count(name) |
++-------------+
+|           8 |
++-------------+
+1 row in set (0.00 sec)
+
+
+mysql> update deptinfo set name="shruthi" where id=10;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
